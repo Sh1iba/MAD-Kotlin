@@ -9,33 +9,39 @@ import android.view.ViewGroup
 import android.widget.Button
 import android.widget.EditText
 import android.widget.TextView
+import androidx.lifecycle.ViewModelProvider
 import androidx.navigation.fragment.findNavController
 import com.example.task_2.R
+import com.example.task_2.ViewModel.TextViewModel
 
 
-@Suppress("UNREACHABLE_CODE")
 class ThirdFragment : Fragment() {
-
+    private lateinit var viewModel: TextViewModel
     private lateinit var editText: EditText
     private lateinit var textview: TextView
-    private lateinit var button: Button
 
-    @SuppressLint("MissingInflatedId")
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        // Inflate the layout for this fragment
         val view = inflater.inflate(R.layout.fragment_third, container, false)
-
-        textview = view.findViewById(R.id.textView)
         editText = view.findViewById(R.id.editText)
-        button = view.findViewById(R.id.buttonInfo)
+        textview = view.findViewById(R.id.textView)
 
-        button.setOnClickListener {
-            var getValue = editText.text.toString()
-            textview.text = "Ваш текст: $getValue"
+        // Инициализируем ViewModel
+        viewModel = ViewModelProvider(this).get(TextViewModel::class.java)
+
+        // Наблюдаем за изменениями текста
+        viewModel.text.observe(viewLifecycleOwner) { newText ->
+            textview.text = "Ваш текст: $newText"
         }
+
+        val button: Button = view.findViewById(R.id.buttonInfo)
+        button.setOnClickListener {
+            val getValue = editText.text.toString()
+            viewModel.updateText(getValue) // Обновляем текст в ViewModel
+        }
+
         val buttonNavBack: Button = view.findViewById(R.id.buttonNavBack)
         buttonNavBack.setOnClickListener {
             findNavController().popBackStack()

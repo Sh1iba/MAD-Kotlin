@@ -10,32 +10,35 @@ import android.view.ViewGroup
 import android.widget.Button
 import android.widget.TextView
 import androidx.fragment.app.replace
+import androidx.lifecycle.ViewModelProvider
 import androidx.navigation.fragment.findNavController
 import com.example.task_2.R
+import com.example.task_2.ViewModel.CounterViewModel
 
 
 class FirstFragment : Fragment() {
-    private var counter: Int = 0
+    private lateinit var viewModel: CounterViewModel
     private lateinit var textViewCount: TextView
 
-    @SuppressLint("UseRequireInsteadOfGet")
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        // Inflate the layout for this fragment
         val view = inflater.inflate(R.layout.fragment_first, container, false)
-
-        // Найдите элементы на разметке
         textViewCount = view.findViewById(R.id.textViewCount)
+
+        // Инициализируем ViewModel
+        viewModel = ViewModelProvider(this).get(CounterViewModel::class.java)
+
+        // Наблюдаем за изменениями счетчика
+        viewModel.counter.observe(viewLifecycleOwner) { count ->
+            textViewCount.text = count.toString()
+        }
+
         val buttonPlus: Button = view.findViewById(R.id.buttonPlus)
-
-        // Установим слушатель для кнопки
         buttonPlus.setOnClickListener {
-            counter++ // Увеличиваем счетчик
+            viewModel.incrementCounter() // Увеличиваем счетчик
             Log.d("TAG", "ты нажал должен быть +1")
-            updateCounter() // Обновляем текст в TextView
-
         }
         val buttonman: Button = view.findViewById(R.id.buttonManually)
         buttonman.setOnClickListener{
@@ -47,7 +50,7 @@ class FirstFragment : Fragment() {
 
         }
 
-            //переход через navigation
+        //переход через navigation
         val buttonNavigate: Button = view.findViewById(R.id.buttonNavi)
         buttonNavigate.setOnClickListener {
             findNavController().navigate(R.id.action_firstFragment_to_secondFragment)
@@ -55,13 +58,5 @@ class FirstFragment : Fragment() {
         }
 
         return view
-
     }
-
-    private fun updateCounter() {
-        textViewCount.text = counter.toString()
-    }
-
-
-
 }
