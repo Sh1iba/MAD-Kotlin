@@ -1,78 +1,73 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="AutoImportSettings">
-    <option name="autoReloadType" value="NONE" />
+    <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="674e77dc-e5d6-414b-815b-dc0b3a02cbfb" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/kotlinc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/KotlinJavaRuntime.xml" beforeDir="false" />
+    <list default="true" id="c304cfd3-7cce-44dd-88f7-0c864d9b500a" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Course_project/app/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/../../Course_project/app/build.gradle.kts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Course_project/app/src/main/java/com/example/course_project/Fragments/MainFragment.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../Course_project/app/src/main/java/com/example/course_project/Fragments/MainFragment.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Course_project/app/src/main/java/com/example/course_project/Fragments/MoneyFragment.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../Course_project/app/src/main/java/com/example/course_project/Fragments/MoneyFragment.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Course_project/app/src/main/java/com/example/course_project/Fragments/PayHistoryFragment.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Course_project/app/src/main/java/com/example/course_project/MainActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../Course_project/app/src/main/java/com/example/course_project/MainActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Course_project/app/src/main/res/layout/activity_main.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../Course_project/app/src/main/res/layout/activity_main.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Course_project/app/src/main/res/layout/fragment_main.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../Course_project/app/src/main/res/layout/fragment_main.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Course_project/app/src/main/res/layout/fragment_pay.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../Course_project/app/src/main/res/layout/fragment_pay.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Course_project/app/src/main/res/layout/fragment_pay_history.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Course_project/settings.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/../../Course_project/settings.gradle.kts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/config.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/caches/deviceStreaming.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/migrations.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Task_1.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/AllExpence.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Expence.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Task.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Project_10/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../Project_10/.idea/gradle.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Project_42/app/src/main/res/layout/activity_main2.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../Project_42/app/src/main/res/layout/activity_main2.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Project_5/app/src/main/res/layout/activity_rycycler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../Project_5/app/src/main/res/layout/activity_rycycler.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ClangdSettings">
-    <option name="formatViaClangd" value="false" />
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Kotlin Class" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
-  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
-  "lastFilter": {
-    "state": "OPEN",
-    "assignee": "Sh1iba"
-  }
-}]]></component>
-  <component name="GithubPullRequestsUISettings"><![CDATA[{
-  "selectedUrlAndAccountId": {
-    "url": "git@github.com:Sh1iba/MAD-Kotlin.git",
-    "accountId": "1c705d13-dc1c-4fbe-80ba-faaecf6da5a3"
-  }
-}]]></component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "customColor": "",
-  "associatedIndex": 1
-}]]></component>
-  <component name="ProjectId" id="2mUO20tDMZIQW1yoPThqY3qrdb5" />
+  <component name="ProjectColorInfo">{
+  &quot;customColor&quot;: &quot;&quot;,
+  &quot;associatedIndex&quot;: 7
+}</component>
+  <component name="ProjectId" id="2mpELs91JDtCbPGsJgJCmXZO5W4" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "Kotlin.MainKt.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.cidr.known.project.marker": "true",
-    "RunOnceActivity.readMode.enableVisualFormatting": "true",
-    "android.gradle.sync.needed": "true",
-    "cf.first.check.clang-format": "false",
-    "cidr.known.project.marker": "true",
     "git-widget-placeholder": "master",
-    "kotlin-language-version-configured": "true"
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/Users/User/AndroidStudioProjects/Kotlin Projects/Task_1"
   }
 }]]></component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="674e77dc-e5d6-414b-815b-dc0b3a02cbfb" name="Changes" comment="" />
-      <created>1727127481957</created>
+      <changelist id="c304cfd3-7cce-44dd-88f7-0c864d9b500a" name="Changes" comment="" />
+      <created>1727765067644</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1727127481957</updated>
+      <updated>1727765067644</updated>
     </task>
     <servers />
   </component>
