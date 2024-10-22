@@ -5,7 +5,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c304cfd3-7cce-44dd-88f7-0c864d9b500a" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../Course_project/app/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/../../Course_project/app/build.gradle.kts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../Course_project/app/src/main/java/com/example/course_project/Fragments/MainFragment.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../Course_project/app/src/main/java/com/example/course_project/Fragments/MainFragment.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../Course_project/app/src/main/java/com/example/course_project/Fragments/MoneyFragment.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../Course_project/app/src/main/java/com/example/course_project/Fragments/MoneyFragment.java" afterDir="false" />
@@ -16,13 +15,6 @@
       <change beforePath="$PROJECT_DIR$/../../Course_project/app/src/main/res/layout/fragment_pay.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../Course_project/app/src/main/res/layout/fragment_pay.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../Course_project/app/src/main/res/layout/fragment_pay_history.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../../Course_project/settings.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/../../Course_project/settings.gradle.kts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/config.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/caches/deviceStreaming.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/migrations.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../Project_10/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../Project_10/.idea/gradle.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../Project_42/app/src/main/res/layout/activity_main2.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../Project_42/app/src/main/res/layout/activity_main2.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../Project_5/app/src/main/res/layout/activity_rycycler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../Project_5/app/src/main/res/layout/activity_rycycler.xml" afterDir="false" />
@@ -51,15 +43,15 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Kotlin.MainKt.executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "master",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/User/AndroidStudioProjects/Kotlin Projects/Task_1"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Kotlin.MainKt.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/User/AndroidStudioProjects/Kotlin Projects/Task_1&quot;
   }
-}]]></component>
+}</component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
