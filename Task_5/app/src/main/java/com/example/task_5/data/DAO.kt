@@ -9,7 +9,7 @@ import androidx.room.Query
 //предоставляет методы, которые остальная часть приложения использует для взаимодействия с данными в products таблице
 @Dao
 interface DAO {
-    @Insert(onConflict = OnConflictStrategy.REPLACE)
+    @Insert
     suspend fun insertAll(products: List<Product>)
 
     @Query("SELECT * FROM products")
