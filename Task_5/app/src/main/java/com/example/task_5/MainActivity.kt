@@ -68,16 +68,6 @@ class MainActivity : AppCompatActivity() {
             override fun onResponse(call: Call<ProductResponse>, response: Response<ProductResponse>) {
                 response.body()?.let { productResponse ->
                     lifecycleScope.launch {
-                        // Получаем существующие продукты из БД
-                        val existingProducts = productDao.getAllProducts().map { it.id }
-
-                        // Отфильтровываем новые продукты
-                        val newProducts = productResponse.products.filter { it.id !in existingProducts }
-
-                        // Вставляем только новые продукты
-                        if (newProducts.isNotEmpty()) {
-                            productDao.insertAll(newProducts)
-                        }
                         loadProductsFromDatabase()
                     }
                 }
