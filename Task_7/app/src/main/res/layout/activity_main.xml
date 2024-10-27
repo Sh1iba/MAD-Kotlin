@@ -39,6 +39,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Show"
+        android:onClick="Network"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -46,10 +47,10 @@
         app:layout_constraintVertical_bias="0.857" />
 
     <Button
-        android:id="@+id/copyPey"
+        android:id="@+id/copyLand"
         android:layout_width="98dp"
         android:layout_height="38dp"
-        android:onClick="copyPey"
+        android:onClick="copyLandScape"
         android:text="Copy"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
