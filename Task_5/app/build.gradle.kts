@@ -1,7 +1,7 @@
 plugins {
     alias(libs.plugins.android.application)
     alias(libs.plugins.kotlin.android)
-
+    id("com.google.dagger.hilt.android")
     kotlin("kapt")
 }
 
@@ -59,6 +59,10 @@ dependencies {
     implementation ("androidx.room:room-runtime:2.5.0")
     kapt ("androidx.room:room-compiler:2.5.0")
     implementation ("androidx.room:room-ktx:2.5.0")
+
+    implementation("com.google.dagger:hilt-android:2.52")
+    kapt("com.google.dagger:hilt-android-compiler:2.52")
+
     implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.appcompat)
     implementation(libs.material)

@@ -1,5 +1,6 @@
 package com.example.task_5
 
+import android.annotation.SuppressLint
 import android.os.Bundle
 import android.util.Log
 import androidx.appcompat.app.AppCompatActivity
@@ -13,13 +14,14 @@ import com.example.task_5.data.Database
 import com.example.task_5.data.Product
 import com.example.task_5.ui.ProductAdapter
 import com.example.task_5.data.ProductResponse
+import dagger.hilt.android.AndroidEntryPoint
 import kotlinx.coroutines.launch
 import retrofit2.Call
 import retrofit2.Callback
 import retrofit2.Response
-import retrofit2.Retrofit
-import retrofit2.converter.gson.GsonConverterFactory
+import javax.inject.Inject
 
+@AndroidEntryPoint
 class MainActivity : AppCompatActivity() {
 
     private lateinit var recyclerView: RecyclerView
@@ -28,6 +30,9 @@ class MainActivity : AppCompatActivity() {
 
     private lateinit var database: Database
     private lateinit var productDao: DAO
+
+    @Inject
+    lateinit var productApi: ApiService // Инъекция ApiService
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -51,28 +56,41 @@ class MainActivity : AppCompatActivity() {
         getProducts()
     }
     private fun getProducts() {
+        /*
         val retrofit = Retrofit.Builder()
             .baseUrl("https://dummyjson.com")
             .addConverterFactory(GsonConverterFactory.create())
             .build()
 
         val productApi = retrofit.create(ApiService::class.java)
-
+*/
         productApi.getProducts().enqueue(object : Callback<ProductResponse> {
             override fun onResponse(call: Call<ProductResponse>, response: Response<ProductResponse>) {
                 response.body()?.let { productResponse ->
                     lifecycleScope.launch {
-                        productDao.insertAll(productResponse.products)
+                        // Получаем существующие продукты из БД
+                        val existingProducts = productDao.getAllProducts().map { it.id }
+
+                        // Отфильтровываем новые продукты
+                        val newProducts = productResponse.products.filter { it.id !in existingProducts }
+
+                        // Вставляем только новые продукты
+                        if (newProducts.isNotEmpty()) {
+                            productDao.insertAll(newProducts)
+                        }
                         loadProductsFromDatabase()
                     }
                 }
             }
+
             override fun onFailure(call: Call<ProductResponse>, t: Throwable) {
                 Log.d("Fail", t.message.toString())
             }
         })
     }
 
+
+    @SuppressLint("NotifyDataSetChanged")
     private fun loadProductsFromDatabase() {
         lifecycleScope.launch {
             productList.addAll(productDao.getAllProducts())
