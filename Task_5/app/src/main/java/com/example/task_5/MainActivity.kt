@@ -28,7 +28,6 @@ class MainActivity : AppCompatActivity() {
     private lateinit var adapter: ProductAdapter
     private val productList = mutableListOf<Product>() // Список для хранения продуктов
 
-    private lateinit var database: Database
     private lateinit var productDao: DAO
 
     @Inject
