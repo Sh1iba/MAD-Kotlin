@@ -29,11 +29,13 @@ class MainActivity : AppCompatActivity() {
 
         clipboard = getSystemService(CLIPBOARD_SERVICE) as ClipboardManager
 
-        // Инициализируем ImageLoader с вашим API
-        val api = RetrofitClient.imageApi // Получаем экземпляр API
+        val api = RetrofitClient.imageApi
         imageLoader = ImageLoader(api)
     }
 
+    fun loadImage(){
+
+    }
     fun Network(view: View) {
         val url: String = binding.editText.text.toString()
         lifecycleScope.launch {
